@@ -1,10 +1,10 @@
 import {
   registerOnDeactivate,
   isExtensionContextValid
-} from "./extension-context"
-import { handleClick, handleWheel, WHEEL_LISTENER_OPTS } from "./events"
-import { applySavedSpeed, observeNewVideos } from "./speed-applier"
-import { setupUrlChangeListener } from "./url-listener"
+} from "./core/extension-context"
+import { handleClick, handleWheel, WHEEL_LISTENER_OPTS } from "./listeners/events"
+import { applySavedSpeed, observeNewVideos } from "./speed/speed-applier"
+import { setupUrlChangeListener } from "./listeners/url-listener"
 
 export const initVideoControl = () => {
   if (!isExtensionContextValid()) {

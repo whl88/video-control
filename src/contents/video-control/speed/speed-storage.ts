@@ -1,4 +1,4 @@
-import { STORAGE_KEY } from "./constants"
+import { STORAGE_KEY } from "../core/constants"
 
 export const getSavedSpeed = (): number => {
   const saved = localStorage.getItem(STORAGE_KEY)

@@ -35,12 +35,11 @@ src/
 ├── contents/
 │   └── video-control/            # Content Script 与核心逻辑
 │       ├── index.ts              # 入口（config + 启动）
-│       ├── events.ts             # 滚轮 / 点击事件
-│       ├── video-actions.ts      # 调速、跳转、重置
-│       ├── speed-applier.ts      # 倍速应用与 DOM 监听
-│       ├── speed-storage.ts      # localStorage 持久化
-│       ├── indicator.ts          # 浮层提示
-│       └── ...
+│       ├── init.ts               # 初始化与生命周期
+│       ├── core/                 # 常量、扩展上下文
+│       ├── video/                # 视频操作、工具、浮层
+│       ├── speed/                # 倍速存储与应用
+│       └── listeners/            # 事件与 URL 变化监听
 ├── popup.tsx                     # 扩展弹窗（用法说明）
 ├── options.tsx                   # 选项页
 └── background.ts

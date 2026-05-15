@@ -1,7 +1,7 @@
-import { WHEEL_LISTENER_OPTS } from "./constants"
-import { ensureLiveExtensionContext } from "./extension-context"
-import { adjustVideoSpeed, resetVideoSpeed, seekVideo } from "./video-actions"
-import { isMouseOverVideo } from "./video-utils"
+import { WHEEL_LISTENER_OPTS } from "../core/constants"
+import { ensureLiveExtensionContext } from "../core/extension-context"
+import { adjustVideoSpeed, resetVideoSpeed, seekVideo } from "../video/video-actions"
+import { isMouseOverVideo } from "../video/video-utils"
 
 const consumeWheelIfVideoModifier = (e: WheelEvent, handler: () => void) => {
   e.preventDefault()

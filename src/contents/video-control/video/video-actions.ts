@@ -1,5 +1,5 @@
 import { showSeekIndicator, showSpeedIndicator } from "./indicator"
-import { saveSpeed } from "./speed-storage"
+import { saveSpeed } from "../speed/speed-storage"
 
 export const adjustVideoSpeed = (video: HTMLVideoElement, delta: number) => {
   const currentSpeed = video.playbackRate || 1.0

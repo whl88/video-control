@@ -1,5 +1,5 @@
-import { ensureLiveExtensionContext } from "./extension-context"
-import { showSpeedIndicator } from "./indicator"
+import { ensureLiveExtensionContext } from "../core/extension-context"
+import { showSpeedIndicator } from "../video/indicator"
 import { getSavedSpeed } from "./speed-storage"
 
 const processedVideos = new WeakSet<HTMLVideoElement>()

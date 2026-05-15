@@ -1,5 +1,5 @@
-import { ensureLiveExtensionContext } from "./extension-context"
-import { applySavedSpeed } from "./speed-applier"
+import { ensureLiveExtensionContext } from "../core/extension-context"
+import { applySavedSpeed } from "../speed/speed-applier"
 
 export const setupUrlChangeListener = (): (() => void) => {
   let currentUrl = window.location.href

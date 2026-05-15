@@ -1,4 +1,4 @@
-import { INDICATOR_BASE_STYLE } from "./constants"
+import { INDICATOR_BASE_STYLE } from "../core/constants"
 import { formatTime } from "./video-utils"
 
 type IndicatorData = {
