@@ -1,6 +1,11 @@
 @use "./styles/variables" as *;
+@use "./styles/guide";
 
-.popup {
-  display: block;
+html,
+body {
   width: $popup-width;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: $popup-bg;
 }
