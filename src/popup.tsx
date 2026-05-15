@@ -1,6 +1,6 @@
 import { UsageGuide } from "./components/usage-guide"
 
-import "./style.scss"
+import "./popup.scss"
 
 function IndexPopup() {
   return <UsageGuide idPrefix="popup" />
