@@ -1,0 +1,6 @@
+@use "./styles/variables" as *;
+
+.popup {
+  display: block;
+  width: $popup-width;
+}
