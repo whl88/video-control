@@ -1,6 +1,6 @@
 import type { PlasmoCSConfig } from "plasmo"
 
-import { initVideoControl } from "./video-control/init"
+import { initVideoControl } from "./init"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://*/*", "http://*/*"],
