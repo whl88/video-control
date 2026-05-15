@@ -1,20 +1,10 @@
-import { useState } from "react"
-
 function IndexOptions() {
-  const [data, setData] = useState("")
-
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
-      <h1>
-        Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
-      </h1>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <footer>Crafted by @PlasmoHQ</footer>{" "}
+    <div className="options">
+      鼠标悬浮在视频上时，使用 Shift + 滚轮调整播放速度，使用 Ctrl + 滚轮快进/快退（5 秒步长）；Shift + 点击视频恢复 1 倍速。
+      <p>
+        还需要什么功能？可以联系我：<a href="mailto:401765060@qq.com">401765060@qq.com</a>
+      </p>
     </div>
   )
 }
