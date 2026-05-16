@@ -1,4 +1,3 @@
-import { INDICATOR_BASE_STYLE } from "../core/constants"
 import { formatTime } from "./video-utils"
 
 type IndicatorData = {
@@ -13,7 +12,6 @@ const getOrCreateIndicator = (video: HTMLVideoElement): IndicatorData => {
   if (!indicatorData) {
     const indicator = document.createElement("div")
     indicator.className = "video-speed-indicator"
-    indicator.style.cssText = INDICATOR_BASE_STYLE
     indicatorData = { element: indicator, timeout: null }
     videoIndicators.set(video, indicatorData)
     document.body.appendChild(indicator)
